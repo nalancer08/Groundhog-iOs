@@ -12,6 +12,8 @@
 		88236BB21CAF046C0078FEB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BB11CAF046C0078FEB4 /* ViewController.m */; };
 		88236BB71CAF046C0078FEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88236BB61CAF046C0078FEB4 /* Assets.xcassets */; };
 		88236BC41CAF04B50078FEB4 /* GhTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC31CAF04B50078FEB4 /* GhTimer.m */; };
+		88236BC71CAF12A30078FEB4 /* GhSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC61CAF12A30078FEB4 /* GhSystem.m */; };
+		88236BCA1CAF15470078FEB4 /* GhScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC91CAF15470078FEB4 /* GhScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		88236BBB1CAF046C0078FEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88236BC21CAF04B50078FEB4 /* GhTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhTimer.h; sourceTree = "<group>"; };
 		88236BC31CAF04B50078FEB4 /* GhTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhTimer.m; sourceTree = "<group>"; };
+		88236BC51CAF12A30078FEB4 /* GhSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhSystem.h; sourceTree = "<group>"; };
+		88236BC61CAF12A30078FEB4 /* GhSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhSystem.m; sourceTree = "<group>"; };
+		88236BC81CAF15470078FEB4 /* GhScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhScene.h; sourceTree = "<group>"; };
+		88236BC91CAF15470078FEB4 /* GhScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 			children = (
 				88236BC21CAF04B50078FEB4 /* GhTimer.h */,
 				88236BC31CAF04B50078FEB4 /* GhTimer.m */,
+				88236BC51CAF12A30078FEB4 /* GhSystem.h */,
+				88236BC61CAF12A30078FEB4 /* GhSystem.m */,
+				88236BC81CAF15470078FEB4 /* GhScene.h */,
+				88236BC91CAF15470078FEB4 /* GhScene.m */,
 			);
 			name = Motor;
 			sourceTree = "<group>";
@@ -157,7 +167,9 @@
 				88236BC41CAF04B50078FEB4 /* GhTimer.m in Sources */,
 				88236BB21CAF046C0078FEB4 /* ViewController.m in Sources */,
 				88236BAF1CAF046C0078FEB4 /* AppDelegate.m in Sources */,
+				88236BC71CAF12A30078FEB4 /* GhSystem.m in Sources */,
 				88236BAC1CAF046C0078FEB4 /* main.m in Sources */,
+				88236BCA1CAF15470078FEB4 /* GhScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 				88236BC01CAF046C0078FEB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
