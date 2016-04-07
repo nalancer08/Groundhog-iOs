@@ -14,6 +14,14 @@
 		88236BC41CAF04B50078FEB4 /* GhTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC31CAF04B50078FEB4 /* GhTimer.m */; };
 		88236BC71CAF12A30078FEB4 /* GhSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC61CAF12A30078FEB4 /* GhSystem.m */; };
 		88236BCA1CAF15470078FEB4 /* GhScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88236BC91CAF15470078FEB4 /* GhScene.m */; };
+		8846A2191CB2C0F20063C909 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A2181CB2C0F20063C909 /* Helpers.m */; };
+		8846A21C1CB2C1D30063C909 /* GhEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A21B1CB2C1D30063C909 /* GhEntity.m */; };
+		8846A21F1CB2C76C0063C909 /* GhVector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A21E1CB2C76C0063C909 /* GhVector2D.m */; };
+		8846A2221CB2C89A0063C909 /* GhAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A2211CB2C89A0063C909 /* GhAnimation.m */; };
+		8846A2251CB2D1530063C909 /* GhAnimationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A2241CB2D1530063C909 /* GhAnimationSheet.m */; };
+		8846A2281CB2DA740063C909 /* GhImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8846A2271CB2DA740063C909 /* GhImage.m */; };
+		88B0F6C01CB6B0A100C55505 /* GhSurfaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F6BF1CB6B0A100C55505 /* GhSurfaceView.m */; };
+		88B0F6C31CB6D79A00C55505 /* GhRenderThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F6C21CB6D79A00C55505 /* GhRenderThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,22 @@
 		88236BC61CAF12A30078FEB4 /* GhSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhSystem.m; sourceTree = "<group>"; };
 		88236BC81CAF15470078FEB4 /* GhScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhScene.h; sourceTree = "<group>"; };
 		88236BC91CAF15470078FEB4 /* GhScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhScene.m; sourceTree = "<group>"; };
+		8846A2171CB2C0F20063C909 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		8846A2181CB2C0F20063C909 /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		8846A21A1CB2C1D30063C909 /* GhEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhEntity.h; sourceTree = "<group>"; };
+		8846A21B1CB2C1D30063C909 /* GhEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhEntity.m; sourceTree = "<group>"; };
+		8846A21D1CB2C76C0063C909 /* GhVector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhVector2D.h; sourceTree = "<group>"; };
+		8846A21E1CB2C76C0063C909 /* GhVector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhVector2D.m; sourceTree = "<group>"; };
+		8846A2201CB2C89A0063C909 /* GhAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhAnimation.h; sourceTree = "<group>"; };
+		8846A2211CB2C89A0063C909 /* GhAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhAnimation.m; sourceTree = "<group>"; };
+		8846A2231CB2D1530063C909 /* GhAnimationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhAnimationSheet.h; sourceTree = "<group>"; };
+		8846A2241CB2D1530063C909 /* GhAnimationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhAnimationSheet.m; sourceTree = "<group>"; };
+		8846A2261CB2DA740063C909 /* GhImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhImage.h; sourceTree = "<group>"; };
+		8846A2271CB2DA740063C909 /* GhImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhImage.m; sourceTree = "<group>"; };
+		88B0F6BE1CB6B0A100C55505 /* GhSurfaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhSurfaceView.h; sourceTree = "<group>"; };
+		88B0F6BF1CB6B0A100C55505 /* GhSurfaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhSurfaceView.m; sourceTree = "<group>"; };
+		88B0F6C11CB6D79A00C55505 /* GhRenderThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhRenderThread.h; sourceTree = "<group>"; };
+		88B0F6C21CB6D79A00C55505 /* GhRenderThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GhRenderThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,8 @@
 				88236BB61CAF046C0078FEB4 /* Assets.xcassets */,
 				88236BBB1CAF046C0078FEB4 /* Info.plist */,
 				88236BAA1CAF046C0078FEB4 /* Supporting Files */,
+				8846A2171CB2C0F20063C909 /* Helpers.h */,
+				8846A2181CB2C0F20063C909 /* Helpers.m */,
 			);
 			path = Groundhog;
 			sourceTree = "<group>";
@@ -90,8 +116,22 @@
 				88236BC31CAF04B50078FEB4 /* GhTimer.m */,
 				88236BC51CAF12A30078FEB4 /* GhSystem.h */,
 				88236BC61CAF12A30078FEB4 /* GhSystem.m */,
+				88B0F6BE1CB6B0A100C55505 /* GhSurfaceView.h */,
+				88B0F6BF1CB6B0A100C55505 /* GhSurfaceView.m */,
+				88B0F6C11CB6D79A00C55505 /* GhRenderThread.h */,
+				88B0F6C21CB6D79A00C55505 /* GhRenderThread.m */,
 				88236BC81CAF15470078FEB4 /* GhScene.h */,
 				88236BC91CAF15470078FEB4 /* GhScene.m */,
+				8846A21A1CB2C1D30063C909 /* GhEntity.h */,
+				8846A21B1CB2C1D30063C909 /* GhEntity.m */,
+				8846A21D1CB2C76C0063C909 /* GhVector2D.h */,
+				8846A21E1CB2C76C0063C909 /* GhVector2D.m */,
+				8846A2201CB2C89A0063C909 /* GhAnimation.h */,
+				8846A2211CB2C89A0063C909 /* GhAnimation.m */,
+				8846A2231CB2D1530063C909 /* GhAnimationSheet.h */,
+				8846A2241CB2D1530063C909 /* GhAnimationSheet.m */,
+				8846A2261CB2DA740063C909 /* GhImage.h */,
+				8846A2271CB2DA740063C909 /* GhImage.m */,
 			);
 			name = Motor;
 			sourceTree = "<group>";
@@ -164,10 +204,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B0F6C01CB6B0A100C55505 /* GhSurfaceView.m in Sources */,
 				88236BC41CAF04B50078FEB4 /* GhTimer.m in Sources */,
+				8846A2251CB2D1530063C909 /* GhAnimationSheet.m in Sources */,
+				8846A2281CB2DA740063C909 /* GhImage.m in Sources */,
+				88B0F6C31CB6D79A00C55505 /* GhRenderThread.m in Sources */,
+				8846A21C1CB2C1D30063C909 /* GhEntity.m in Sources */,
+				8846A21F1CB2C76C0063C909 /* GhVector2D.m in Sources */,
+				8846A2221CB2C89A0063C909 /* GhAnimation.m in Sources */,
 				88236BB21CAF046C0078FEB4 /* ViewController.m in Sources */,
 				88236BAF1CAF046C0078FEB4 /* AppDelegate.m in Sources */,
 				88236BC71CAF12A30078FEB4 /* GhSystem.m in Sources */,
+				8846A2191CB2C0F20063C909 /* Helpers.m in Sources */,
 				88236BAC1CAF046C0078FEB4 /* main.m in Sources */,
 				88236BCA1CAF15470078FEB4 /* GhScene.m in Sources */,
 			);

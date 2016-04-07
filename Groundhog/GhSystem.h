@@ -9,13 +9,27 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "GhScene.h"
+#import "GhSurfaceView.h"
 
 @interface GhSystem : NSObject
 
-    @property (retain, nonatomic) GhSystem *mInstance;
-    @property (nonatomic) CGContextRef context;
-    @property (retain, nonatomic) UIView *mSurfaceView;
+    @property (nonatomic) UIViewController *mContext;
+    @property (retain, nonatomic) GhSurfaceView *mSurfaceView;
     @property (retain, nonatomic) GhScene *mScene;
-@property (nonatomic) long mTick;
+    @property (nonatomic) long mTick;
+    @property (nonatomic) int mWidth;
+    @property (nonatomic) int mHeight;
+
+    + (GhSystem *)getInstance ;
+    - (void)initialize:(UIViewController *)activity;
+    - (int)getWidth;
+    - (int)getHeight;
+    - (void)setScene:(GhScene *)scene;
+    - (UIViewController *)getContext;
+    - (GhScene *)getScene;
+    - (void)run;
+
+
+
 
 @end
