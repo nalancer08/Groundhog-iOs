@@ -10,12 +10,12 @@
 
 @implementation GhAnimationSheet
 
-- (id)init:(int)id :(int)width :(int)height {
+- (id)init:(NSString *)id :(int)width :(int)height {
     
     self = [super init];
     if ( self != nil ) {
         
-        _mImage = [[GhImage alloc] init];
+        _mImage = [[GhImage alloc] init:id];
         _mWidth = width;
         _mHeight = height;
     }

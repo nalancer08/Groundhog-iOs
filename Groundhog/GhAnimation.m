@@ -63,7 +63,7 @@
     }
     if (self.mAngle == 0) {
         //_mSheet.mImage.drawTile(canvas, targetX, targetY, this.mTile, this.mSheet.getWidth(), this.mSheet.getHeight(), (this.mFlip.x != 0.0f), this.mFlip.y != 0.0f);
-        [_mSheet.mImage drawTile:canvas :targetX :targetY :_mTile :_mSheet :[_mSheet getWidth] :[_mSheet getHeight] :(_mFlip.x != 0.0f) :(_mFlip.y != 0.0f) ];
+        [self.mSheet.mImage drawTitle:canvas :targetX :targetY :self.mTile :[self.mSheet getWidth] :[self.mSheet getHeight] :(_mFlip.x != 0.0f) :(_mFlip.y != 0.0f)];
     }
 }
 

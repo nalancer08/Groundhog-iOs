@@ -8,6 +8,7 @@
 
 #import "GhRenderThread.h"
 #import "GhSurfaceView.h"
+#import "GhSystem.h"
 
 @implementation GhRenderThread
 
@@ -18,7 +19,7 @@
         
         _mView = view;
         _mRunning = false;
-        [self performSelector:@selector(run) withObject:nil];
+        //[self performSelector:@selector(run) withObject:nil];
     }
     return self;
 }
@@ -27,17 +28,32 @@
     _mRunning = running;
 }
 
-- (id)init {
-    
-    self = [super init];
-    if (self) {
-        [self performSelector:@selector(run) withObject:nil];
-    }
-    return self;
-}
 
 - (void)run {
-    NSLog(@"ya no se que pedo");
+    UIView *canvas;
+    GhSystem *system = [GhSystem getInstance];
+    GhScene *scene = nil;
+    while (self.mRunning) {
+        canvas = self.mView;
+        @try {
+            [system run];
+            scene = [system getScene];
+            if ( scene != nil && canvas != nil ) {
+                [scene update];
+                [scene draw:canvas];
+            }
+        }
+        
+        @catch (NSException * e) {
+            NSLog(@"Exception: %@", e);
+        }
+        @finally {
+            if ( canvas != nil ) {
+                [canvas setNeedsDisplay];
+            }
+        }
+    }
+    
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GhSystem.h"
+#import "TestScene.h"
 
 @interface ViewController : UIViewController
 

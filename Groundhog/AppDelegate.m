@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    // Iniciamos la ventana al tamaño completo (DEFAULT)
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSLog(@"x == %f", [[UIScreen mainScreen] bounds].size.width);
+    NSLog(@"y == %f", [[UIScreen mainScreen] bounds].size.height);
+    
+    ViewController *v = [[ViewController alloc] init];
+
+    self.window.rootViewController = v;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

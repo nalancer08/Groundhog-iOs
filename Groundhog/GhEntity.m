@@ -38,7 +38,10 @@
 
 - (void)draw:(UIView *)canvas {
     if ( self.mCurrentAnim != nil ) {
-        [self.mCurrentAnim draw:canvas :(int)([self getPos].x - [self getOffset].x) :(int)([self.getPos].y - [self.getOffset].y)];
+        
+        GhVector2D *pos = [self getPos];
+        GhVector2D *offset = [self getOffset];
+        [self.mCurrentAnim draw:canvas :(int)( pos.x - offset.x ) :(int)( pos.y - offset.y ) ];
     }
 }
 

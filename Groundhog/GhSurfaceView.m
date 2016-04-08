@@ -17,7 +17,10 @@
         
         _mThread = [[GhRenderThread alloc] init:self];
         [self.mThread setRunning:TRUE];
+        //[self.mThread performSelector:@selector(run) withObject:nil];
+        [self.mThread performSelectorInBackground:@selector(run) withObject:nil];
         [self.mThread start];
+        
     }
     return self;
 }

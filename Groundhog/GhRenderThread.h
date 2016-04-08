@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "GhSurfaceView.h"
+@class GhSurfaceView;
 
 @interface GhRenderThread : NSThread
 

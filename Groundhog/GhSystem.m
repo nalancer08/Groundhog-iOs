@@ -33,13 +33,14 @@
 - (void)initialize:(UIViewController *)activity {
 
     _mContext = activity;
+    
+    _mWidth = [[UIScreen mainScreen] bounds].size.width;
+    _mHeight = [[UIScreen mainScreen] bounds].size.height;
+    
     _mSurfaceView = [[GhSurfaceView alloc] init:activity];
     activity.view = self.mSurfaceView;
     
     //[activity.view addSubview:self.mSurfaceView];
-    
-    _mWidth = [[UIScreen mainScreen] bounds].size.width;
-    _mHeight = [[UIScreen mainScreen] bounds].size.height;
     
     //CGContextRef context = UIGraphicsGetCurrentContext();
 
@@ -54,7 +55,7 @@
 }
 
 - (void)setScene:(GhScene *)scene {
-    _mScene = scene;
+    self.mScene = scene;
 }
 
 - (UIViewController *)getContext {

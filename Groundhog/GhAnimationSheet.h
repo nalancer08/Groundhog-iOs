@@ -15,7 +15,7 @@
 @property (nonatomic) int mWidth;
 @property(nonatomic) int mHeight;
 
-- (id)init:(int)id :(int)width :(int)height;
+- (id)init:(NSString*)id :(int)width :(int)height;
 - (int)getWidth;
 - (int)getHeight;
 

@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TestScene *scene = [[TestScene alloc] init];
+    
+    GhSystem *system = [GhSystem getInstance];
+    [system setScene:scene];
+    [system initialize:self];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
