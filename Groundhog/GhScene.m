@@ -34,6 +34,8 @@
     width = canvas.frame.size.width;
     height = canvas.frame.size.height;
     
+    //NSLog(@"canvasW = %d and canvasH = %d", width, height);
+    
     canvas.backgroundColor = _mClearColor;
     [self drawEntities:canvas];
 }

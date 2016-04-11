@@ -9,16 +9,20 @@
 #import "GhImage.h"
 #import "GhSystem.h"
 
-@implementation GhImage
+@implementation GhImage {
+    UIImageView *ja;
+}
 
 - (id)init:(NSString *)id {
     
     self = [super init];
     if ( self != nil ) {
+        NSLog(@"imagen %@", id);
         UIViewController *context = [[GhSystem getInstance] getContext];
         _mBitmap = [UIImage imageNamed:id];
         _mWidth = self.mBitmap != nil ? self.mBitmap.size.width : 0;
         _mHeight = self.mBitmap != nil ? self.mBitmap.size.height : 0;
+        ja = [[UIImageView alloc] init];
     }
     return self;
 }
@@ -55,22 +59,53 @@
         dstX = x * scaleX - (flipX ? tileWidth : 0);
         dstY = y * scaleY - (flipY ? tileHeight : 0);
         dst = CGRectMake(dstX, dstY, (dstX + tileWidth), (dstY + tileHeight));
-        
+        NSLog(@"destinoX == %d & dY = %d", dstX, dstY);
+        CGRect la = CGRectMake(0, 0, -128, 70);
+        CGSize sprite = CGSizeMake(self.mWidth, self.mHeight);
         /*CGSize size = CGSizeMake(300, 300);
         CGFloat screenScale = [UIScreen mainScreen].scale;
         UIGraphicsBeginImageContextWithOptions(size, NO, screenScale);*/
         
-        /*CGContextRef context = UIGraphicsGetCurrentContext();
-        NSLog(@"src == %f y %@", src.size.width, self.mBitmap.images);
-        CGImageRef subImage = CGImageCreateWithImageInRect(self.mBitmap.CGImage, src);
+        //CGContextRef context = UIGraphicsGetCurrentContext();
+        //NSLog(@"src == %f y %@", src.size.width, self.mBitmap.images);
+        //CGImageRef subImage = CGImageCreateWithImageInRect(self.mBitmap.CGImage, src);
         //CGContextDrawImage(context, dst, subImage);
-        CGImageRelease(subImage);*/
+        //CGImageRelease(subImage);
+        
+        //[canvas setNeedsDisplay];
+        //canvas.backgroundColor = [UIColor redColor];
+        /*UIView *cosita = [[UIView alloc] init];
+        cosita.frame = dst;
+        cosita.backgroundColor = [UIColor yellowColor];
+        [canvas addSubview:cosita];*/
+        
+            
+            //CGImageRelease(subImage);
+
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                //CGContextRef context = UIGraphicsGetCurrentContext();
+                //UIImage *subImage = CFBridgingRelease(CGImageCreateWithImageInRect(self.mBitmap.CGImage, la));
+
+                UIGraphicsBeginImageContextWithOptions(sprite, NO, 0);
+                [self.mBitmap drawAtPoint:CGPointMake(128, 0)];
+                //[self drawInRect:rect];
+                UIImage* im = UIGraphicsGetImageFromCurrentImageContext();
+                UIGraphicsEndImageContext();
+                
+                ja.frame = dst;
+                ja.image = im;
+                [canvas addSubview:ja];
+            });
+
+        
+        
+        [canvas clearsContextBeforeDrawing];
         
         //CALayer *layer = [[CALayer alloc] init];
         
-        canvas.layer.contents = (__bridge id _Nullable)(self.mBitmap.CGImage);
+        /*canvas.layer.contents = (__bridge id _Nullable)(self.mBitmap.CGImage);
         canvas.layer.contentsRect = src;
-        canvas.layer.contentsGravity = kCAGravityResizeAspect;
+        canvas.layer.contentsGravity = kCAGravityResizeAspect;*/
 
     }
 }

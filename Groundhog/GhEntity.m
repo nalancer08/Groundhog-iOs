@@ -41,7 +41,8 @@
         
         GhVector2D *pos = [self getPos];
         GhVector2D *offset = [self getOffset];
-        [self.mCurrentAnim draw:canvas :(int)( pos.x - offset.x ) :(int)( pos.y - offset.y ) ];
+        [self.mCurrentAnim draw:canvas :((int)(pos.x - offset.x)) :((int)(pos.y - offset.y))];
+        //[self.mCurrentAnim draw:canvas :(int)( pos.x - offset.x ) :(int)( pos.y - offset.y ) ];
     }
 }
 

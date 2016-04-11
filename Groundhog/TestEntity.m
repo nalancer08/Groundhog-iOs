@@ -25,16 +25,17 @@
 
 - (void)update {
     [super update];
-    /*GhSystem *system = [GhSystem getInstance];
+    GhSystem *system = [GhSystem getInstance];
     
     if ( self.mPos.x > system.getWidth - 128 ) {
         _mDirection = -1;
-    } else if ( self.mPos < 0 ) {
+    }
+    if ( self.mPos.x < 0 ) {
         _mDirection = 1;
     }
     
     self.mPos.x += 1 * self.mDirection;
-    [self.mCurrentAnim setFlip:(self.mDirection == -1) :false];*/
+    [self.mCurrentAnim setFlip:(self.mDirection == -1) :false];
 }
 
 

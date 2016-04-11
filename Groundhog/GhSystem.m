@@ -9,8 +9,9 @@
 #import "GhSystem.h"
 #include <sys/time.h>
 
-@implementation GhSystem
+static GhSystem *mInstance = nil;
 
+@implementation GhSystem
 - (id) init {
     self = [super init];
     if ( self != nil ) {
@@ -22,10 +23,10 @@
 }
 
 + (GhSystem *)getInstance {
-    static GhSystem *mInstance = nil;
+    //static GhSystem *mInstance = nil;
     @synchronized(self) {
         if (mInstance == nil)
-            mInstance = [[self alloc] init];
+            mInstance = [[GhSystem alloc] init];
     }
     return mInstance;
 }

@@ -15,6 +15,6 @@
 
     @property (retain, nonatomic) GhRenderThread *mThread;
 
-- (id)init:(UIViewController *)context;
+    - (id)init:(UIViewController *)context;
 
 @end
